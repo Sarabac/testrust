@@ -1,9 +1,5 @@
 use rand::Rng;
-use std::{
-    iter::Sum,
-    thread,
-};
-
+use std::{iter::Sum, thread};
 
 pub fn thread_add(mesures: &Vec<f64>) -> f64 {
     mesures
@@ -30,6 +26,5 @@ mod test {
         dbg!(normal);
         let avec_thread = thread_add(&mesures);
         dbg!(avec_thread);
-        
     }
 }
